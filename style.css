@@ -1088,7 +1088,7 @@ body {
   .section-heading { font-size: 26px; }
 
   /* CTA */
-  .cta-banner { padding: 56px 0; }
+  .cta-banner { padding: 56px 0; background-attachment: scroll; background-size: cover; background-position: center; }
   .cta-banner__sub { font-size: 14px; }
   .cta-banner__actions { flex-direction: column; align-items: stretch; }
   .cta-banner__actions .btn--primary,
