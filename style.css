@@ -919,7 +919,7 @@ body {
   .navbar__hamburger { display: flex; flex-shrink: 0; }
 
   /* ── Hero — 70vh ── */
-  .hero { height: 55vh; min-height: 380px; }
+  .hero { height: 42vh; min-height: 300px; }
   .hero__content {
     justify-content: flex-start;
     padding-top: calc(var(--nav-h) + 20px);
