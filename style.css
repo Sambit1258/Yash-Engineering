@@ -205,7 +205,9 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 4px;
+  padding: 12px;
+  margin: -12px;
+  touch-action: manipulation;
 }
 .navbar__hamburger span {
   display: block;
@@ -919,7 +921,7 @@ body {
   .navbar__hamburger { display: flex; flex-shrink: 0; }
 
   /* ── Hero — 70vh ── */
-  .hero { height: 42vh; min-height: 300px; }
+  .hero { height: 30vh; min-height: 220px; }
   .hero__content {
     justify-content: flex-start;
     padding-top: calc(var(--nav-h) + 20px);
