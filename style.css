@@ -1087,8 +1087,22 @@ body {
   /* Section headings */
   .section-heading { font-size: 26px; }
 
-  /* CTA */
-  .cta-banner { padding: 56px 0; background-attachment: scroll; background-size: cover; background-position: center; }
+  /* CTA — background-attachment:fixed is broken on all mobile browsers;
+     use ::before pseudo-element instead for a truly static background */
+  .cta-banner {
+    padding: 56px 0;
+    background-image: none;
+    background-attachment: scroll;
+  }
+  .cta-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('images/CTA.webp') center / cover no-repeat;
+    z-index: 0;
+  }
+  .cta-banner__overlay { z-index: 1; }
+  .cta-banner__inner   { z-index: 2; }
   .cta-banner__sub { font-size: 14px; }
   .cta-banner__actions { flex-direction: column; align-items: stretch; }
   .cta-banner__actions .btn--primary,
