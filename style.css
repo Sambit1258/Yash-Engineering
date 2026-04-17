@@ -915,19 +915,20 @@ body {
   .navbar__nav ul { flex-direction: column; align-items: flex-start; gap: 4px; }
   .nav-link { font-size: 15px; padding: 10px 14px; width: 100%; }
   .navbar__actions .btn--primary { display: none; }
-  .navbar__actions { gap: 0; margin-left: 0; }
-  .navbar__hamburger { display: flex; flex-shrink: 0; margin-left: 16px; }
+  .navbar__actions { gap: 0; margin-left: auto; }
+  .navbar__hamburger { display: flex; flex-shrink: 0; }
 
   /* ── Hero — 70vh ── */
-  .hero { height: 70vh; min-height: 480px; }
+  .hero { height: 55vh; min-height: 380px; }
   .hero__content {
     justify-content: flex-start;
     padding-top: calc(var(--nav-h) + 20px);
-    padding-bottom: 70px;
+    padding-bottom: 60px;
     padding-left: 20px;
     padding-right: 20px;
     max-width: 100%;
   }
+  .hero__sub { display: none; }
   .hero__badge-row { gap: 6px; margin-bottom: 14px; }
   .hero__badge { font-size: 11px; padding: 4px 10px; }
   .hero__dots { bottom: 36px; }
